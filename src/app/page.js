@@ -32,51 +32,51 @@ export default function Home() {
 
 function Navbar({ scrollToHome, scrollToAboutUs, scrollToBlogs }) {
   return (
-    <nav className="bg-slate-800 shadow-md p-4 flex justify-between items-center">
+    <nav className="bg-pink-800 h-20 shadow-md p-4 flex justify-between items-center">
       <div className="flex items-center">
         
         <img
           src="/logo.jpg"
           alt="Logo"
-          className="h-20 w-20 mr-4 cursor-pointer"
+          className="h-10 w-10 mr-4 cursor-pointer"
           onClick={scrollToHome}
         />
 
       </div>
 
       
-      <div className="hidden bg-black border-4 border-pink-300 rounded-3xl md:flex space-x-4 text-4xl">
+      <div className="hidden bg-pink-400 border-4 scale-75 border-pink-300 rounded-3xl md:flex space-x-4 text-4xl">
         <button
           onClick={scrollToHome}
-          className="text-pink-600 hover:text-pink-400 p-4 focus:outline-none"
+          className="text-white hover:text-pink-800 p-4 focus:outline-none"
         >
           Home
         </button>
         <button
           onClick={scrollToAboutUs}
-          className="text-pink-600 hover:text-pink-400 p-4 focus:outline-none"
+          className="text-white hover:text-pink-800 p-4 focus:outline-none"
         >
           About Us
         </button>
         <button
           onClick={scrollToBlogs}
-          className="text-pink-600 hover:text-pink-400 p-4 focus:outline-none"
+          className="text-white hover:text-pink-800 p-4 focus:outline-none"
         >
           Blogs & Articles
         </button>
       </div>
 
       
-      <div className="flex space-x-4 text-4xl border-4 border-pink-300 rounded-3xl bg-black">
+      <div className="flex space-x-4 text-4xl scale-75 border-4 border-pink-300 rounded-3xl bg-pink-400">
         <button
           onClick={() => window.location.href = "/login"}
-          className="text-pink-600 hover:text-pink-400 p-2 rounded-md  transition-colors duration-200 "
+          className="text-white hover:text-pink-800 p-2 rounded-md  transition-colors duration-200 "
         >
           Login
         </button>
         <button
           onClick={() => window.location.href = "/signup"}
-          className=" text-pink-600 hover:text-pink-400 p-2 rounded-md transition-colors duration-200 "
+          className=" text-white hover:text-pink-800 p-2 rounded-md transition-colors duration-200 "
         >
           Signup
         </button>
