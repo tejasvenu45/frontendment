@@ -1,4 +1,3 @@
-// pages/index.jsx
 "use client";
 
 import { useRef } from 'react';
@@ -35,7 +34,7 @@ function Navbar({ scrollToHome, scrollToAboutUs, scrollToBlogs }) {
   return (
     <nav className="bg-slate-800 shadow-md p-4 flex justify-between items-center">
       <div className="flex items-center">
-        {/* Logo/Image */}
+        
         <img
           src="/logo.jpg"
           alt="Logo"
@@ -45,7 +44,7 @@ function Navbar({ scrollToHome, scrollToAboutUs, scrollToBlogs }) {
 
       </div>
 
-      {/* Center Links */}
+      
       <div className="hidden bg-black border-4 border-pink-300 rounded-3xl md:flex space-x-4 text-4xl">
         <button
           onClick={scrollToHome}
@@ -67,7 +66,7 @@ function Navbar({ scrollToHome, scrollToAboutUs, scrollToBlogs }) {
         </button>
       </div>
 
-      {/* Right Links */}
+      
       <div className="flex space-x-4 text-4xl border-4 border-pink-300 rounded-3xl bg-black">
         <button
           onClick={() => window.location.href = "/login"}
@@ -137,7 +136,7 @@ function AboutUs() {
           <span className="text-blue-600 font-semibold">Are you a psychiatrist?</span> Join our platform to reach patients who need your expertise and make a difference in their lives. Together, we can create a supportive community.
         </p>
 
-        {/* Image Section */}
+
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <img
@@ -157,7 +156,7 @@ function AboutUs() {
           </div>
         </div>
 
-        {/* Call to Action */}
+        
         <div className="mt-12">
           <button
             onClick={() => window.location.href = "/signup"}
@@ -189,7 +188,7 @@ function BlogsAndArticles() {
       </p>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* Card 1 */}
+
         <div className="bg-white shadow-lg rounded-lg overflow-hidden border-2 border-pink-500 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src="/logo.jpg" alt="Mental Health" className="w-full h-40 object-cover" />
           <div className="p-4">
@@ -200,7 +199,7 @@ function BlogsAndArticles() {
           </div>
         </div>
 
-        {/* Card 2 */}
+        
         <div className="bg-white shadow-lg rounded-lg overflow-hidden border-2 border-pink-500 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src="/logo.jpg" alt="Mental Health" className="w-full h-40 object-cover" />
           <div className="p-4">
@@ -211,7 +210,7 @@ function BlogsAndArticles() {
           </div>
         </div>
 
-        {/* Card 3 */}
+        
         <div className="bg-white shadow-lg rounded-lg overflow-hidden border-2 border-pink-500 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src="/logo.jpg" alt="Mental Health" className="w-full h-40 object-cover" />
           <div className="p-4">
@@ -222,7 +221,6 @@ function BlogsAndArticles() {
           </div>
         </div>
 
-        {/* Card 4 */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden border-2 border-pink-500 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src="/logo.jpg" alt="Mental Health" className="w-full h-40 object-cover" />
           <div className="p-4">
